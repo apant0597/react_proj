@@ -1,5 +1,5 @@
 name: React Web App
-on: push
+on: [push, workflow_dispatch]
 jobs:
   execute-test-cases:
     runs-on: ubuntu-latest
