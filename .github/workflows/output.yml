@@ -4,5 +4,5 @@ jobs:
     print-github-outputs:
         runs-on: ubuntu-latest
         steps:
-        -	name: Get github outputs
+         -  name: Get github outputs
             run: echo ${{ toJSON(github) }}
