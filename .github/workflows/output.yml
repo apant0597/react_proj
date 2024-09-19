@@ -1,0 +1,8 @@
+name: printOutput
+on: [workflow_dispatch]
+jobs:
+    print-github-outputs:
+        runs-on: ubuntu-latest
+        steps:
+        -	name: Get github outputs
+            run: echo ${{ toJSON(github) }}
